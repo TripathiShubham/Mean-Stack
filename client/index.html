@@ -1,0 +1,46 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html  ng-app="JSEnd">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS (load bootstrap) -->
+
+
+    <!-- JS (fontawesome, bootstrap, load angular, ui-router, and our custom js file) -->
+    <script src="/client/assets/lib/angular/angular.min.js"></script>
+    <script src="/client/assets/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="/client/app/app.module.js"></script>
+    <script src="/client/app/app.route.js"></script>
+
+
+    <!-- angular services -->
+
+    <!-- angular controllers -->
+    <script src="/client/app/components/mainController/mainController.controller.js"></script>
+    <script src="/client/app/components/dashboard/dashboard.controller.js"></script>
+
+    <!-- angular directive -->
+
+    <!-- custom filters -->
+
+
+
+</head>
+
+<!-- apply our angular app to our site -->
+	<body ng-controller="MainController as MainCtrl">
+
+	<!-- MAIN CONTENT -->
+  		<div class="container">
+
+    	<!-- THIS IS WHERE WE WILL INJECT OUR CONTENT  -->
+    	<div ui-view></div>
+
+  		</div>
+
+	</body>
+</html>
